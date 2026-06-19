@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Aryan</a>
+
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="container mt-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6 text-center text-md-start">
+
+            <h1 class="display-3">
+                Hi, I'm Aryan
+            </h1>
+
+            <h3 class="mt-3">
+                Python & Django Developer
+            </h3>
+
+            <p class="lead mt-3">
+                Building Web Applications and Real-World Projects
+            </p>
+
+            <div class="mt-4">
+                <a href="#projects" class="btn btn-primary me-2">
+                    View Projects
+                </a>
+
+                <a href="{% static 'resume/Aryan_Kushwaha_Resume.pdf' %}"
+   class="btn btn-outline-light"
+   target="_blank">
+    Download Resume
+</a>
+            </div>
+
+            <div class="mt-3">
+                <a href="https://github.com/ARYANKUSHWAHA-2028" target="_blank"
+                   class="btn btn-outline-light me-2">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/aryan-kushwaha-938448313/" target="_blank"
+                   class="btn btn-outline-info">
+                    LinkedIn
+                </a>
+            </div>
+
+        </div>
+
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+
+            <img src="{% static 'images/profile.jpg' %}"
+                 class="img-fluid rounded-circle shadow"
+                 width="300"
+                 alt="Aryan">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- About Section -->
+<section id="about" class="container mt-5">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Python and Django Developer passionate about building
+        web applications and solving real-world problems.
+    </p>
+
+    <p>
+        Currently learning Django, PostgreSQL, Git and building
+        real-world projects to strengthen my software development skills.
+    </p>
+
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="container mt-5">
+
+    <h2 class="mb-4">Skills</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-3 mb-4">
+            <div class="card p-4 h-100">
+                <img src="{% static 'skills/python.png' %}"
+                     class="img-fluid mx-auto"
+                     style="height:100px; object-fit:contain;">
+                <h5 class="mt-3">Python</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card p-4 h-100">
+                <img src="{% static 'skills/django.png' %}"
+                     class="img-fluid mx-auto"
+                     style="height:100px; object-fit:contain;">
+                <h5 class="mt-3">Django</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card p-4 h-100">
+                <img src="{% static 'skills/postgresql.png' %}"
+                     class="img-fluid mx-auto"
+                     style="height:100px; object-fit:contain;">
+                <h5 class="mt-3">PostgreSQL</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card p-4 h-100">
+                <img src="{% static 'skills/github.png' %}"
+                     class="img-fluid mx-auto"
+                     style="height:100px; object-fit:contain;">
+                <h5 class="mt-3">GitHub</h5>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="container mt-5">
+
+    <h2>Projects</h2>
+
+    <div class="card p-4 mt-3">
+        <h4>Employment Resource Workflow Tracker</h4>
+
+        <p>
+            Employee management and workflow tracking application.
+        </p>
+
+        <p>
+            Django | PostgreSQL | Bootstrap
+        </p>
+    </div>
+
+    <div class="card p-4 mt-3">
+
+    <h4>Government Scheme Finder</h4>
+
+    <p>
+        Platform to help users find government schemes based on eligibility.
+    </p>
+
+    <p>
+        Django | Python | Bootstrap | SQLite
+    </p>
+
+    <a href="https://github.com/ARYANKUSHWAHA-2028/JansaHayak"
+       target="_blank"
+       class="btn btn-outline-info">
+       GitHub Repository
+    </a>
+
+</div>
+
+
+</section>
+
+<!-- Certifications Section -->
+<!-- Certificates Section -->
+<section class="container mt-5">
+
+    <h2 class="text-center mb-5">Certificates</h2>
+
+    <div class="row">
+
+        <!-- IBM -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/ibm_data_analysis.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">IBM Data Analysis</h5>
+                    <p class="card-text">Data Analysis Certification by IBM.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deloitte -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/deloitte_data_analytics.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Deloitte Data Analytics</h5>
+                    <p class="card-text">Data Analytics Certification by Deloitte.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cisco -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/cisco_data_science.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Cisco Data Science</h5>
+                    <p class="card-text">Data Science Certification by Cisco.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- HP AI -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/hp_ai_for_beginners.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">HP AI for Beginners</h5>
+                    <p class="card-text">Artificial Intelligence Fundamentals.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ISRO -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/isro_geo_data_analysis.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">ISRO Geo Data Analysis</h5>
+                    <p class="card-text">Geo Data Analysis Certification by ISRO.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill India -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/skill_india_cybersecurity.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Skill India Cybersecurity</h5>
+                    <p class="card-text">Cybersecurity Fundamentals Certification.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- APTECH -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/aptech_ethical_hacking.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Ethical Hacking</h5>
+                    <p class="card-text">Ethical Hacking Certification by APTECH.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tata Group -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="{% static 'certificates/unstop_tata_program.png' %}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Tata Group Program</h5>
+                    <p class="card-text">Professional Program Certification by Tata Group.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="container mt-5 mb-5">
+
+    <h2>Contact</h2>
+
+    <p>Email: 2028aryankushwaha@gmail.com</p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/aryan-kushwaha-938448313/"
+           target="_blank">
+           Visit LinkedIn
+        </a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="https://github.com/ARYANKUSHWAHA-2028"
+           target="_blank">
+           Visit GitHub
+        </a>
+    </p>
+
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-4">
+    © 2026 Aryan Portfolio | Built with Django
+</footer>
+
+{% endblock %}
