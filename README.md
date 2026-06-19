@@ -1,6 +1,6 @@
 # Aryan Kushwaha Portfolio
 
-Personal portfolio website built using Django.
+Modern portfolio website built using Django, Bootstrap, JavaScript, Lottie Animations, and Python showcasing projects, certifications, skills, and achievements.
 
 ## Live Features
 
