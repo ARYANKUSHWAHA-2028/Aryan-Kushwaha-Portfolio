@@ -16,5 +16,61 @@
 {% block content %}
 {% endblock %}
 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+const roles = [
+    "Python Developer",
+    "Django Developer",
+    "Backend Developer",
+    "Problem Solver"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let currentRole = "";
+let isDeleting = false;
+
+function typeEffect() {
+
+    const typingText = document.getElementById("typing-text");
+
+    if (!typingText) return;
+
+    currentRole = roles[roleIndex];
+
+    if (!isDeleting) {
+        typingText.textContent =
+            currentRole.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentRole.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1500);
+            return;
+        }
+    } else {
+
+        typingText.textContent =
+            currentRole.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+            isDeleting = false;
+            roleIndex++;
+
+            if (roleIndex === roles.length) {
+                roleIndex = 0;
+            }
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+
+typeEffect();
+</script>
+
+
 </body>
 </html>
